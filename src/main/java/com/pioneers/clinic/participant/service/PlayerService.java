@@ -42,4 +42,8 @@ public class PlayerService {
         return playerRepository.findById(id).orElseThrow();
     }
 
+    public Player updatePlayer(Player player) {
+        return playerRepository.save(player);
+    }
+
 }

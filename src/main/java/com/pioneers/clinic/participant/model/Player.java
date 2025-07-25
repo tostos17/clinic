@@ -18,12 +18,12 @@ public class Player {
     private int technicalSkillScore;
     private int tacticalSkillScore;
     private int behaviouralSkillScore;
-    private int comment;
+    private String comment;
 
     public Player() {
     }
 
-    public Player(long id, String firstname, String lastname, int age, int physicalSkillScore, int technicalSkillScore, int tacticalSkillScore, int behaviouralSkillScore, int comment) {
+    public Player(long id, String firstname, String lastname, int age, int physicalSkillScore, int technicalSkillScore, int tacticalSkillScore, int behaviouralSkillScore, String comment) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
@@ -99,11 +99,11 @@ public class Player {
         this.behaviouralSkillScore = behaviouralSkillScore;
     }
 
-    public int getComment() {
+    public String getComment() {
         return comment;
     }
 
-    public void setComment(int comment) {
+    public void setComment(String comment) {
         this.comment = comment;
     }
 }

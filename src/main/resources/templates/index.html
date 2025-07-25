@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome</title>
+    <link th:href="@{/css/index.css}" rel="stylesheet">
 </head>
 <body>
-Welcome
+    <div>
+        <h3 class="title">player assessment</h3>
+        <ul class="subjects">
+            <li><a href="/assessment/assess/physical" class="sub p">physical</a></li>
+            <li><a href="/assessment/assess/technical" class="sub tech">technical</a></li>
+            <li><a href="/assessment/assess/tactical" class="sub tac">tactical</a></li>
+            <li><a href="/assessment/assess/behavioural" class="sub att">behavioural</a></li>
+            <li><a href="/assessment/assess/comment" class="sub com">comment</a></li>
+            <li><a href="/assessment/scores" class="sub sco">score board</a></li>
+        </ul>
+    </div>
 </body>
 </html>

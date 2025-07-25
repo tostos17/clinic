@@ -1,0 +1,124 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul.subjects {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center
+
+}
+
+ul.subjects  a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.title {
+    text-transform: capitalize;
+    font-size: 1.5rem
+}
+
+ul.subjects li {
+    padding: 1em;
+    margin: 1em;
+    box-sizing: border-box;
+}
+
+.sub {
+    border-radius: 1em;
+    padding: 1em 2em;
+    color: white;
+
+}
+
+.p {
+    background-color: green;
+}
+
+.tech {
+    background-color: yellow;
+}
+
+.tac {
+    background-color: blue;
+
+}
+
+.com {
+    background-color: orange;
+}
+
+.att {
+    background-color: purple;
+}
+
+.sco {
+    background-color: magenta;
+}
+
+.row {
+    width: 100%;
+}
+
+.each {
+    display: flex;
+    margin: 1em 0;
+    background-color: #f2f2f2;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.each > div:first-child {
+    flex: 3;
+}
+
+.each > div:last-child {
+    flex: 2;
+}
+
+.each label {
+    display: block
+}
+
+.each span {
+    text-transform: capitalize;
+}
+
+.btn-set {
+    display: flex;
+}
+
+.flag {
+    width: .3em;
+    height: 1em;
+    background-color: green;
+}
+
+.row {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  width: max-content; /* allows table to grow beyond container */
+  min-width: 100%;
+  white-space: nowrap;
+}
+
+.styled-table th,
+.styled-table td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.styled-table thead {
+  background-color: #f2f2f2;
+}

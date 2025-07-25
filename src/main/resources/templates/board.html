@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Score Board</title>
+    <link th:href="@{/css/index.css}" rel="stylesheet">
+</head>
+<body>
+<div class="row">
+    <h2>Scores</h2>
+
+    <table class="styled-table">
+        <thead>
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Technical Skills</th>
+            <th>Tactical Skills</th>
+            <th>Physical Skills</th>
+            <th>Behavioural Skills</th>
+            <th>Comment</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="score : ${scores}">
+            <td th:text="${scoreStat.index + 1}"></td>
+            <td th:text="${score.firstname} + ' ' + ${score.lastname}"></td>
+            <td th:text="${score.age}"></td>
+            <td th:text="${score.technicalSkillScore}"></td>
+            <td th:text="${score.tacticalSkillScore}"></td>
+            <td th:text="${score.physicalSkillScore}"></td>
+            <td th:text="${score.behaviouralSkillScore}"></td>
+            <td th:text="${score.comment}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

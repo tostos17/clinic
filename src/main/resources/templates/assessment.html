@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PFA Assessment</title>
+    <link th:href="@{/css/index.css}" rel="stylesheet">
+</head>
+<body>
+<div class="row">
+    <h2 th:text="${subject} + ' ' + assessment"  class="title"></h2>
+
+    <div th:each="participant : ${participants}" class="each">
+        <div>
+            <span th:text="${participant.firstname}"></span>
+            <span th:text="${participant.lastname}"></span>
+        </div>
+        <div class="btn-set">
+            <div>
+                <label>1</label>
+                <input type="radio" th:name="${participant.id}" th:value="1" th:attr="data-subject=${subject}" th:class="btn-score" />
+            </div>
+            <div>
+                <label>2</label>
+                <input type="radio" th:name="${participant.id}" th:value="2" th:attr="data-subject=${subject}" th:class="btn-score" />
+            </div>
+            <div>
+                <label>3</label>
+                <input type="radio" th:name="${participant.id}" th:value="3" th:attr="data-subject=${subject}" th:class="btn-score" />
+            </div>
+            <div>
+                <label>4</label>
+                <input type="radio" th:name="${participant.id}" th:value="4" th:attr="data-subject=${subject}" th:class="btn-score" />
+            </div>
+            <div>
+                <label>5</label>
+                <input type="radio" th:name="${participant.id}" th:value="5" th:attr="data-subject=${subject}" th:class="btn-score" />
+            </div>
+            <span th:id="${participant.id}"></span>
+        </div>
+    </div>
+</div>
+
+<div id="resultContainer"></div>
+<script type="text/javascript" th:src="@{/js/main.js}" ></script>
+
+</body>
+</html>
