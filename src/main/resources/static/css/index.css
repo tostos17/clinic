@@ -2,6 +2,21 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 100%;
+    max-width: 100%
+}
+
+.header {
+    display: flex;
+    background-color: #00006e;
+    color: #F2F2F2;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.header a {
+    color: orange;
 }
 
 ul.subjects {
@@ -14,7 +29,7 @@ ul.subjects {
 
 }
 
-ul.subjects  a {
+a {
     text-decoration: none;
     text-transform: capitalize;
 }
@@ -34,7 +49,7 @@ ul.subjects li {
     border-radius: 1em;
     padding: 1em 2em;
     color: white;
-
+    width: 8em;
 }
 
 .p {
@@ -95,30 +110,41 @@ ul.subjects li {
 }
 
 .flag {
-    width: .3em;
+    width: .5em;
     height: 1em;
-    background-color: green;
+    background-color: red;
 }
 
 .row {
   overflow-x: auto;
-  width: 100%;
+  max-width: 100%;
 }
 
-.styled-table {
+.row table {
   border-collapse: collapse;
-  width: max-content; /* allows table to grow beyond container */
-  min-width: 100%;
-  white-space: nowrap;
+  /* width: max-content; */ /* allows table to grow beyond container */
+  /* min-width: 100%; */
+  /* white-space: nowrap; */
 }
 
-.styled-table th,
-.styled-table td {
+.row table th,
+.row table td {
   border: 1px solid #ccc;
   padding: 8px 12px;
   text-align: left;
 }
 
-.styled-table thead {
+.row table thead {
   background-color: #f2f2f2;
+}
+
+/* Add rounded corners */
+.row table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Zebra striping */
+.row table tr:nth-child(even) {
+    background-color: #f9f9f9;
 }

@@ -106,4 +106,19 @@ public class Player {
     public void setComment(String comment) {
         this.comment = comment;
     }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "id=" + id +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", age=" + age +
+                ", physicalSkillScore=" + physicalSkillScore +
+                ", technicalSkillScore=" + technicalSkillScore +
+                ", tacticalSkillScore=" + tacticalSkillScore +
+                ", behaviouralSkillScore=" + behaviouralSkillScore +
+                ", comment='" + comment + '\'' +
+                '}';
+    }
 }
