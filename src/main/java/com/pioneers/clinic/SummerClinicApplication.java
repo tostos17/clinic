@@ -40,6 +40,7 @@ public class SummerClinicApplication {
 			playerService.addPlayer(new PlayerDto("Udochukwu", "Hope", 11));
 			playerService.addPlayer(new PlayerDto("Okeke", "William", 14));
 			playerService.addPlayer(new PlayerDto("Bakare", "Adeogo", 13));
+			playerService.addPlayer(new PlayerDto("Babalogbon Oluwadarasimi", "Emmanuel", 11));
 		};
 	}
 
